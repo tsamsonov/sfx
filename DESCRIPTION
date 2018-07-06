@@ -1,12 +1,19 @@
 Package: sfx
 Type: Package
-Title: Extra functions for manipulating and analyzing sf (simple features) objects
-Version: 0.1.0
-Author: Timofey Samsonov
-Maintainer: Timofey Samsonov <tsamsonov@geogr.msu.ru>
-Description: sfx package extends sf package by adding extra functions that manipulate simple features geometry. The main focus is on geometric simplification (generalization) of geometry.
+Title: Extra functions for manipulating and analyzing sf objects
+Description: sfx package extends sf package by adding extra functions 
+  that manipulate simple features geometry. The main focus is on 
+  geometric simplification (generalization) of geometry.
+Version: 0.0.0.9000
+Authors@R: person("Timofey", "Samsonov", email="tsamsonov@geogr.msu,ru", role=c("aut", "cre"))
 License: GPL-2 | MIT
 Encoding: UTF-8
 LazyData: true
-Imports: Rcpp (>= 0.12.16)
+Imports: 
+        Rcpp (>= 0.12.16), 
+        dplyr,
+        pbapply,
+        sf,
+        spatialEco,
+        zoo
 LinkingTo: Rcpp
